@@ -147,7 +147,6 @@ section {
     height: 100vh;
 }
 
-
 .content {
     max-width: 60rem;
 }
@@ -163,4 +162,43 @@ font-size: 10rem;
     font-weight: 100;
     line-height: 1.8;
     padding: 1rem 0;
+}
+
+.menu-container {
+    padding-top: 120px; /* ajusta conforme a altura do header */
+    text-align: center;
+
+}
+
+.titulo-galeria {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color:#fff;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1px;
+    column-gap: 20px
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
 }
